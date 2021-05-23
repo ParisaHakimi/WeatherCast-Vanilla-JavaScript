@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style/master.css">
+</head>
+
+
+
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <h1>Weather cast</h1>
+            <form action="index.php">
+                <input type="text" placeholder="Enter a city Name...">
+                <button>Search</button>
+            </form>
+            <div class="error"></div>
+            <div class="loader">Loading...</div>
+            <div class="weather">
+                <div class="top-section">
+                    <div class="local-section">
+                        <div>Country: <span class="country"></span></div>
+                        <div>City: <span class="city"></span></div>
+                        <div>Local Time: <span class="local-time"></span></div>
+                        <div><span class="temp"></span></div>
+                    </div>
+                    <div class="icon-section">
+                        <div><img class="icon" src="" alt=""></div>
+                    </div>
+                </div>
+                <div class="buttom-section">
+                    <div class="condition-section">
+                        <div><span class="condition"></span></div>
+                        <div>Feels Like: <span class="feels-like"></span><span></span></div>
+                        <div>Humadity: <span class="humadity"></span></div>
+                        <div>Last Updated: <span class="last-updated"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
