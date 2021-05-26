@@ -21,7 +21,7 @@ const getWeather = async(cityName) => {
         weather.style.display = 'none';
         errorText.style.display = 'none';
 
-        const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=e957e17266c3460b94d162206211405&q=${cityName}&aqi=no`);
+        const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=e957e17266c3460b94d162206211405&q=${cityName}&aqi=no`);
         const data = await res.json();
         if (data.error) {
             errorMessage = data.error.message;
