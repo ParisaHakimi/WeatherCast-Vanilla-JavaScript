@@ -64,7 +64,7 @@ form button {
     flex-direction: column;
     margin-top: 20px;
     padding: 20px;
-    height: 50vh;
+    min-height: 50vh;
     background-color: rgba(144, 145, 214, 0.5);
     display: none;
 }
@@ -194,5 +194,27 @@ form button {
     }
     87.5% {
         box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+
+/* responsive */
+
+@media screen and (max-width:767px) {
+    .wrapper {
+        width: 70%;
+        min-height: 70vh;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    form button {
+        font-size: .7rem;
     }
 }
