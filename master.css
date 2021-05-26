@@ -205,6 +205,9 @@ form button {
         width: 70%;
         min-height: 70vh;
     }
+    .weather {
+        min-height: 65vh;
+    }
     h1 {
         font-size: 2rem;
     }
